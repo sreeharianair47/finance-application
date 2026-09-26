@@ -263,7 +263,7 @@ table.rpt th { color: var(--ink-soft); font-weight: 500; }
 
 <div id="lockScreen" style="display:none;">
   <div class="glyph">📒</div>
-  <h2 style="margin:0 0 4px;">Ledger</h2>
+  <h2 style="margin:0 0 4px;">Headache</h2>
   <div class="muted small" id="lockMsg">Enter your PIN</div>
   <div class="pin-dots" id="pinDots"></div>
   <div class="pinpad" id="pinPad"></div>
@@ -461,7 +461,7 @@ function render(){
     b.classList.toggle('active', b.dataset.view === state.view || (state.view==='more' && b.dataset.view==='more') );
   });
   const titles = {
-    dashboard: ['Ledger', 'Your offline finance book'],
+    dashboard: ['Headache', 'Your offline finance book'],
     transactions: ['Transactions', 'Every entry, searchable'],
     budgets: ['Budgets', 'Keep spending on track'],
     reports: ['Reports', 'See where money moves'],
@@ -472,7 +472,7 @@ function render(){
     calendar: ['Calendar', 'Activity by date'],
     settings: ['Settings', 'Make it yours'],
   };
-  const t = titles[state.view] || ['Ledger',''];
+  const t = titles[state.view] || ['Headache',''];
   document.getElementById('pageTitle').textContent = t[0];
   document.getElementById('pageSub').textContent = t[1];
   document.getElementById('fabAdd').style.display = ['dashboard','transactions','calendar'].includes(state.view) ? 'flex' : 'none';
